@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #121213;
+    color: white;
+
+}
+
+#game-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 600px;
+
+}
+
+span {
+    color: rgb(235, 235, 123);
+}
+
+.rows {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+.inputBox {
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; 
+    border: 2px solid #3a3a3c;
+    background: transparent;
+    color: rgb(223, 216, 216);
+    
+}
+
+#resultLabel{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#userControls{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.enterBtn, .deleteBtn, .refreshBtn {
+    color: rgb(235, 235, 123);
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(244, 246, 244);
+    border-radius: 50px;
+    padding:10px 20px;
+    background-color: transparent; 
+    cursor: pointer;  
+
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+}
+
+.shake {
+    animation: shake 0.3s; 
+}
+
+.enterBtn:active,.deleteBtn:active,.refreshBtn:active {
+    transform: translatey(-4px);
+    transition: transform 0.3s ease-out;
+    
+}
